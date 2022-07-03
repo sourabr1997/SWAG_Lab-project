@@ -25,7 +25,7 @@ public class ExtentManager_2 {
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/extent-config_2.xml");
 		htmlReporter.config().setDocumentTitle("Automation Test Report");
 		htmlReporter.config().setReportName("SWAG Labs Test Automation Report");
-		htmlReporter.config().setTheme(Theme.STANDARD); 
+		htmlReporter.config().setTheme(Theme.DARK); 
 		
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
