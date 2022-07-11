@@ -20,7 +20,7 @@ import com.MySeleniumProject_2.utility.ExtentManager_2;
 import com.MySeleniumProject_2.utility.Log_2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import jdk.internal.org.jline.utils.Log;
+
 
 public class BaseClass_2 {
 	

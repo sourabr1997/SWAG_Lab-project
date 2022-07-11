@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.MySeleniumProject_2.testcases.CompleteVerificationScenario" class="method navigator-link" hash-for-method="completeVerification(qwe, asd, 8888.0)">completeVerification(qwe, asd, 8888.0)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.MySeleniumProject_2.testcases.CompleteVerificationScenario" class="method navigator-link" hash-for-method="completeVerification(abc, xyz, 9999.0)">completeVerification(abc, xyz, 9999.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.MySeleniumProject_2.testcases.CompleteVerificationScenario" class="method navigator-link" hash-for-method="completeVerification(abc, xyz, 9999.0)">completeVerification(abc, xyz, 9999.0)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.MySeleniumProject_2.testcases.CompleteVerificationScenario" class="method navigator-link" hash-for-method="completeVerification(qwe, asd, 8888.0)">completeVerification(qwe, asd, 8888.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -130,23 +130,84 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="completeVerification(qwe, asd, 8888.0)">
-                  </a> <!-- completeVerification(qwe, asd, 8888.0) -->
+                  <a name="completeVerification(abc, xyz, 9999.0)">
+                  </a> <!-- completeVerification(abc, xyz, 9999.0) -->
                   <span class="method-name">completeVerification</span>
-                  <span class="parameters">(qwe, asd, 8888.0)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [THANK YOU FOR YOUR ORDERSSSS] but found [THANK YOU FOR YOUR ORDER]
-	at com.MySeleniumProject_2.testcases.CompleteVerificationScenario.completeVerification(CompleteVerificationScenario.java:74)
+                  <span class="parameters">(abc, xyz, 9999.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-2TFWWT2&apos;, ip: &apos;172.25.240.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at com.MySeleniumProject_2.actiondriver.Action_2.click(Action_2.java:49)
+	at com.MySeleniumProject_2.pageObject.ProductPage.clickOnCart(ProductPage.java:28)
+	at com.MySeleniumProject_2.testcases.CompleteVerificationScenario.completeVerification(CompleteVerificationScenario.java:53)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-2TFWWT2&apos;, ip: &apos;172.25.240.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 38 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 50 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;shopping_cart_container&quot;]/a/span&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-2TFWWT2&apos;, ip: &apos;172.25.240.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ravindrs\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:9987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bdf18b855d440dd4e87145072577c76b
+*** Element info: {Using=xpath, value=//*[@id=&quot;shopping_cart_container&quot;]/a/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 55 more
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="completeVerification(abc, xyz, 9999.0)">
-                  </a> <!-- completeVerification(abc, xyz, 9999.0) -->
+                  <a name="completeVerification(qwe, asd, 8888.0)">
+                  </a> <!-- completeVerification(qwe, asd, 8888.0) -->
                   <span class="method-name">completeVerification</span>
-                  <span class="parameters">(abc, xyz, 9999.0)</span>
+                  <span class="parameters">(qwe, asd, 8888.0)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [THANK YOU FOR YOUR ORDERSSSS] but found [THANK YOU FOR YOUR ORDER]
 	at com.MySeleniumProject_2.testcases.CompleteVerificationScenario.completeVerification(CompleteVerificationScenario.java:74)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
@@ -216,16 +277,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'completeVerification')
 data.setCell(0, 2, 'com.MySeleniumProject_2.testcases.CompleteVerificationScenario')
-data.setCell(0, 3, 21558);
+data.setCell(0, 3, 21196);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'completeVerification')
 data.setCell(1, 2, 'com.MySeleniumProject_2.testcases.CompleteVerificationScenario')
-data.setCell(1, 3, 20989);
+data.setCell(1, 3, 12740);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -258,35 +319,35 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setup(Chrome)</span>
-                <span class="method-start">1508 ms</span>
+                <span class="method-start">1452 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">completeVerification(abc, xyz, 9999.0)</span>
-                <span class="method-start">4566 ms</span>
+                <span class="method-start">8098 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26264 ms</span>
+                <span class="method-start">21039 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(Chrome)</span>
-                <span class="method-start">26657 ms</span>
+                <span class="method-start">21458 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">completeVerification(qwe, asd, 8888.0)</span>
-                <span class="method-start">29186 ms</span>
+                <span class="method-start">23895 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50283 ms</span>
+                <span class="method-start">45202 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite1</span>
-                <span class="method-start">50780 ms</span>
+                <span class="method-start">45572 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
